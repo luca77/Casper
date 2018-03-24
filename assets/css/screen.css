@@ -803,11 +803,11 @@ Usage (In Ghost editor):
 }
 
 .post-full-content code {
-    padding: 0 5px 2px;
-    font-size: 0.8em;
+    padding: 0 3px 2px;
+    font-size: 1em;
     line-height: 1em;
     font-weight: 400!important;
-    background: var(--whitegrey);
+    background: var(--lightgrey);
     border-radius: 3px;
 }
 
