@@ -77,6 +77,25 @@
 
     <script src="{{asset "js/prism.js"}}"></script>
 
+    <script>
+    // Copied from https://blog.kchung.co/adding-image-captions-to-ghost/
+    // Creates Captions from Alt tags
+    $(".post-full-content img").each(
+        function() {
+            // Let's put a caption if there is one
+            if ($(this).attr("alt")) {
+                $(this).wrap(
+                    '<figure class="image"></figure>'
+                ).after(
+                    '<figcaption>' +
+                    $(this).attr(
+                        "alt") +
+                    '</figcaption>'
+                );
+            }
+        });
+    </script>
+
     {{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
     {{ghost_foot}}
 

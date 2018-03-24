@@ -729,7 +729,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
 .post-full-content img,
 .post-full-content video {
     display: block;
-    margin: 1.5em auto;
+    margin: 1.5em auto 0.5em;
     max-width: 1040px;
 }
 @media (max-width: 1040px) {
@@ -737,6 +737,17 @@ The first (most recent) post in the list is styled to be bigger than the others 
     .post-full-content video {
         width: 100%;
     }
+}
+
+.post-full-content figcaption {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #666665;
+    outline: 0;
+    z-index: 300;
+    text-align: center;
 }
 
 
