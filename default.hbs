@@ -14,7 +14,7 @@
     {{!-- Styles'n'Scripts --}}
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans|Titillium+Web" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
-    <link href="/assets/css/prism.css" rel="stylesheet" />
+    <link href="{{asset "css/prism.css"}}" rel="stylesheet" />
 
     {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
@@ -75,7 +75,7 @@
     {{!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. --}}
     {{{block "scripts"}}}
 
-    <script src="/assets/js/prism.js"></script>
+    <script src="{{asset "js/prism.js"}}"></script>
 
     {{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
     {{ghost_foot}}
