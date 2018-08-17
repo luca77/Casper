@@ -32,7 +32,7 @@ production stylesheet in assets/built/screen.css
 @import "global.css";
 
 body {
-    background: #f4f8fb;
+    background: white;
 }
 
 .img {
@@ -112,7 +112,7 @@ body {
     position: relative;
     padding-top: 12px;
     padding-bottom: 12px;
-    color: #fff;
+    color: white;
     background: color(var(--darkgrey) l(-5%)) no-repeat center center;
     background-size: cover;
 }
@@ -126,7 +126,15 @@ body {
     left: 0;
     z-index: 10;
     display: block;
-    background: rgba(0,0,0,0.18);
+}
+
+svg.doubleu {
+    fill: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4vw;
+    width: 100%;
 }
 
 .site-header:after {
@@ -232,7 +240,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: block;
     margin-right: 24px;
     padding: 11px 0;
-    color: #fff;
+    color: white;
     font-size: 1.7rem;
     line-height: 1em;
     font-weight: bold;
@@ -269,7 +277,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: block;
     margin: 0;
     padding: 10px 12px;
-    color: #fff;
+    color: white;
     opacity: 0.8;
 }
 
@@ -301,7 +309,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     align-items: center;
     margin: 0;
     padding: 10px;
-    color: #fff;
+    color: white;
     opacity: 0.8;
 }
 
@@ -311,7 +319,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .social-link svg {
     height: 1.8rem;
-    fill: #fff;
+    fill: white;
 }
 
 .social-link-fb svg {
@@ -323,7 +331,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .social-link-wb svg path {
-    stroke: #fff;
+    stroke: white;
 }
 
 .social-link-rss svg {
@@ -333,8 +341,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .subscribe-button {
     display: block;
     padding: 4px 10px;
-    border: #fff 1px solid;
-    color: #fff;
+    border: white 1px solid;
+    color: white;
     font-size: 1.2rem;
     line-height: 1em;
     border-radius: 10px;
@@ -357,7 +365,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .rss-button svg {
     margin-bottom: 1px;
     height: 2.1rem;
-    fill: #fff;
+    fill: white;
 }
 
 @media (max-width: 700px) {
@@ -387,30 +395,22 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .post-card {
+    border-bottom: 3px solid black;
     flex: 1 1 300px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     margin: 0 20px 40px;
     min-height: 300px;
-    background: #fff center center;
+    background: white center center;
     background-size: cover;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
     transition: all 0.5s ease;
-}
-
-.post-card:hover {
-    box-shadow: 0 2px 3px 0 hsla(0, 0%, 0%, 0.2);
-    transition: all 0.4s ease;
-    transform: translate3D(0, -1px, 0) scale(1.02);
 }
 
 .post-card-image-link {
     position: relative;
     display: block;
     overflow: hidden;
-    border-radius: 5px 5px 0 0;
 }
 
 .post-card-image {
@@ -459,10 +459,11 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .post-card-meta {
+    background-color: var(--whitegrey);
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0 25px 25px;
+    padding: 15px 25px;
 }
 
 .author-profile-image,
@@ -533,7 +534,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     margin: 0 -5px;
     width: 34px;
     height: 34px;
-    border: #fff 2px solid;
+    border: white 2px solid;
     border-radius: 100%;
 }
 
@@ -543,7 +544,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     margin: 0 -6px;
     width: 56px;
     height: 56px;
-    border: #fff 2px solid;
+    border: white 2px solid;
     border-radius: 100%;
     transition: all 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99) 0.7s;
 }
@@ -588,7 +589,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .reading-time {
     flex-shrink: 0;
     margin-left: 20px;
-    color: var(--midgrey);
+    color: var(--darkgrey);
     font-size: 1.2rem;
     line-height: 33px;
     font-weight: 500;
@@ -611,7 +612,6 @@ The first (most recent) post in the list is styled to be bigger than the others 
     .home-template .post-feed .post-card:nth-child(6n+1):not(.no-image) .post-card-image-link {
         position: relative;
         flex: 1 1 auto;
-        border-radius: 5px 0 0 5px;
     }
 
     .home-template .post-feed .post-card:nth-child(6n+1):not(.no-image) .post-card-image {
@@ -638,7 +638,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
     }
 
     .home-template .post-feed .post-card:nth-child(6n+1):not(.no-image) .post-card-meta {
-        padding: 0 40px 30px;
+        padding: 15px 40px;
     }
 }
 
@@ -665,7 +665,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
 .post-template .site-main,
 .page-template .site-main {
     padding-bottom: 4vw;
-    background: #fff;
+    background: white;
 }
 
 .post-full {
@@ -715,7 +715,6 @@ The first (most recent) post in the list is styled to be bigger than the others 
     height: 800px;
     background: var(--lightgrey) center center;
     background-size: cover;
-    border-radius: 5px;
 }
 
 @media (max-width: 1170px) {
@@ -739,7 +738,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
     min-height: 230px;
     font-size: 2.2rem;
     line-height: 1.6em;
-    background: #fff;
+    background: white;
 }
 
 @media (max-width: 1170px) {
@@ -969,7 +968,7 @@ Usage (In Ghost editor):
     width: 1px;
     height: 30px;
     background: color(var(--lightgrey) l(+10%));
-    box-shadow: #fff 0 0 0 5px;
+    box-shadow: white 0 0 0 5px;
     transform: rotate(45deg);
 }
 
@@ -1225,7 +1224,7 @@ Usage (In Ghost editor):
     padding: 0 20px;
     height: 41px;
     outline: none;
-    color: #fff;
+    color: white;
     font-size: 1.5rem;
     line-height: 37px;
     font-weight: 400;
@@ -1414,7 +1413,7 @@ Usage (In Ghost editor):
     margin-left: -12px;
     width: 0;
     height: 0;
-    border-top: 12px solid #fff;
+    border-top: 12px solid white;
     border-right: 12px solid transparent;
     border-left: 12px solid transparent;
 }
@@ -1430,7 +1429,7 @@ Usage (In Ghost editor):
     flex-direction: column;
     align-items: center;
     padding: 30px 20px 20px 20px;
-    color: #fff;
+    color: white;
     background: var(--darkgrey);
     border-radius: 6px 6px 0 0;
 }
@@ -1500,7 +1499,7 @@ Usage (In Ghost editor):
     overflow: hidden;
     margin: 0 20px 40px;
     padding: 25px;
-    color: #fff;
+    color: white;
     background: var(--darkgrey) center center;
     background-size: cover;
     border-radius: 5px;
@@ -1538,14 +1537,14 @@ Usage (In Ghost editor):
 .read-next-card-header-title {
     margin: 0;
     padding: 0 20px;
-    color: #fff;
+    color: white;
     font-size: 3rem;
     line-height: 1.2em;
     letter-spacing: 1px;
 }
 
 .read-next-card-header-title a {
-    color: #fff;
+    color: white;
     font-weight: 300;
     text-decoration: none;
 }
@@ -1564,7 +1563,7 @@ Usage (In Ghost editor):
 .read-next-divider svg {
     width: 40px;
     fill: transparent;
-    stroke: #fff;
+    stroke: white;
 
     stroke-width: 0.5px;
     stroke-opacity: 0.65;
@@ -1600,7 +1599,7 @@ Usage (In Ghost editor):
     display: block;
     padding: 20px 0;
     border-bottom: rgba(255,255,255,0.3) 1px solid;
-    color: #fff;
+    color: white;
     font-weight: 500;
     vertical-align: top;
     transition: opacity 0.3s ease;
@@ -1621,7 +1620,7 @@ Usage (In Ghost editor):
 }
 
 .read-next-card-footer a {
-    color: #fff;
+    color: white;
 }
 
 
@@ -1712,7 +1711,7 @@ Usage (In Ghost editor):
 .floating-header-share svg {
     width: auto;
     height: 16px;
-    fill: #fff;
+    fill: white;
 }
 
 .floating-header-share-label {
@@ -1738,7 +1737,7 @@ Usage (In Ghost editor):
     align-items: center;
     width: 60px;
     height: 60px;
-    color: #fff;
+    color: white;
     line-height: 48px;
     text-align: center;
     transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
@@ -1943,7 +1942,7 @@ Usage (In Ghost editor):
 
 .site-header-content .author-location svg {
     height: 1.9rem;
-    stroke: #fff;
+    stroke: white;
 }
 
 .site-header-content .bull {
@@ -2055,7 +2054,7 @@ Usage (In Ghost editor):
     z-index: 9999;
     margin: 0 0 5vw 0;
     padding: 4vw;
-    color: #fff;
+    color: white;
     text-align: center;
 }
 
@@ -2123,7 +2122,7 @@ Usage (In Ghost editor):
     padding: 0 25px;
     height: 52px;
     outline: none;
-    color: #fff;
+    color: white;
     font-size: 1.7rem;
     line-height: 37px;
     font-weight: 400;
@@ -2163,7 +2162,7 @@ Usage (In Ghost editor):
     display: block;
     width: 30px;
     height: 2px;
-    background: #fff;
+    background: white;
     opacity: 0.8;
     transform: rotate(45deg);
 }
@@ -2176,7 +2175,7 @@ Usage (In Ghost editor):
     display: block;
     width: 30px;
     height: 2px;
-    background: #fff;
+    background: white;
     opacity: 0.8;
     transform: rotate(-45deg);
 }
@@ -2193,7 +2192,7 @@ Usage (In Ghost editor):
     position: relative;
     padding-top: 20px;
     padding-bottom: 60px;
-    color: #fff;
+    color: white;
     background: color(var(--darkgrey) l(-15%));
 }
 
@@ -2232,7 +2231,7 @@ Usage (In Ghost editor):
     display: block;
     width: 2px;
     height: 2px;
-    background: #fff;
+    background: white;
     border-radius: 100%;
 }
 
