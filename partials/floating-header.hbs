@@ -11,6 +11,18 @@
     <div class="floating-header-title">{{title}}</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this {{> "icons/point"}}</div>
+        <a class="floating-header-share-gp" href="https://plus.google.com/share?url={{url absolute="true"}}"
+            onclick="window.open(this.href, 'share-gplus', 'width=550,height=235');return false;">
+            {{> "icons/googleplus"}}
+        </a>
+        <a class="floating-header-share-li" href="https://www.linkedin.com/shareArticle?mini=true&url={{url absolute="true"}}&amp;title={{encode title}}&amp;source=while(2)"
+            onclick="window.open(this.href, 'share-linkedin', 'width=550,height=235');return false;">
+            {{> "icons/linkedin"}}
+        </a>
+        <a class="floating-header-share-re" href="http://www.reddit.com/submit?url={{url absolute="true"}}&amp;title={{encode title}}"
+            onclick="window.open(this.href, 'share-reddit', 'width=550,height=235');return false;">
+            {{> "icons/reddit"}}
+        </a>
         <a class="floating-header-share-tw" href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             {{> "icons/twitter"}}

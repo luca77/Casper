@@ -1746,6 +1746,9 @@ Usage (In Ghost editor):
     transform: rotate(90deg);
 }
 
+.floating-header-share-gp,
+.floating-header-share-li,
+.floating-header-share-re,
 .floating-header-share-tw,
 .floating-header-share-fb {
     display: block;
@@ -1756,6 +1759,18 @@ Usage (In Ghost editor):
     line-height: 48px;
     text-align: center;
     transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.floating-header-share-gp {
+    background: #dd4d40;
+}
+
+.floating-header-share-li {
+    background: #0077b5;
+}
+
+.floating-header-share-re {
+    background: #ff4500;
 }
 
 .floating-header-share-tw {
