@@ -2,7 +2,7 @@
     "name": "casperw2",
     "description": "The default personal blogging theme for Ghost. Customized for while (2)",
     "demo": "https://while2.ghost.io",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "engines": {
         "ghost": ">=2.0.0"
     },
