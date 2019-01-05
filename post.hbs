@@ -26,12 +26,6 @@ into the {body} of the default.hbs template --}}
             </header>
 
             {{#if feature_image}}
-            <figure class="post-full-image" style="background-image: url({{feature_image}}); position: relative;">
-
-            <!-- https://codepen.io/erikdkennedy/pen/ygpwZg/ -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="doubleu">
-                <polygon points="0,0 25,100 50,0 75,100 100,0 100,100 0,100" />
-            </svg>
             <figure class="post-full-image">
                 {{!-- This is a responsive image, it loads different sizes depending on device
                 https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433 --}}
