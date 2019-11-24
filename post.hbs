@@ -18,14 +18,7 @@ into the {body} of the default.hbs template --}}
             <header class="post-full-header">
 
                     <time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY-MM-DD"}}</time>
-                    <span class="date-divider">/</span> {{tags separator="&nbsp;&bull;&nbsp;"}}
-                {{#if primary_tag}}
-                <section class="post-full-tags">
-                    {{#primary_tag}}
-                    <a href="{{url}}">{{name}}</a>
-                    {{/primary_tag}}
-                </section>
-                {{/if}}
+		    <span class="date-divider">/</span> <span class="post-tags">{{tags separator="&nbsp;&bull;&nbsp;"}}</span>
 
                 <h1 class="post-full-title">{{title}}</h1>
 
@@ -52,6 +45,7 @@ into the {body} of the default.hbs template --}}
                                         <div class="bio">
                                             <h2>{{name}}</h2>
                                             <p>{{bio}}</p>
+                                            {{#if twitter}}<a href="{{twitter_url}}">Follow me on twitter</a>{{/if}}
                                             <p><a href="{{url}}">More posts</a> by {{name}}.</p>
                                         </div>
                                         {{else}}

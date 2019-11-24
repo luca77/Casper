@@ -644,6 +644,11 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     text-transform: uppercase;
 }
 
+.post-card-tags {
+    font-size: 80%;
+    text-transform: uppercase;
+}
+
 .post-card-title {
     margin: 0 0 0.4em;
     line-height: 1.15em;
@@ -2083,6 +2088,11 @@ Usage (In Ghost editor):
 .post-template .post-content > p:first-child:first-line {
     font-size: 1.1em;
     font-variant: small-caps;
+}
+
+.post-tags {
+    font-size: 80%;
+    text-transform: uppercase;
 }
 
 .post-full-content .kg-image {
