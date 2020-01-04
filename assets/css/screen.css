@@ -968,6 +968,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 .post-full-title {
     margin: 0 0 0.2em;
     color: color(var(--darkgrey) l(-5%));
+    text-align-last: right;
 }
 
 .post-full-custom-excerpt {

@@ -433,14 +433,14 @@ h5,
 h6 {
     font-family: "Titillium Web", sans-serif;
     margin-top: 0;
-    line-height: 1.15;
+    line-height: 1.25;
     font-weight: 600;
     text-rendering: optimizeLegibility;
 }
 
 h1 {
     margin: 0 0 0.5em 0;
-    font-size: 5.5rem;
+    font-size: 5rem;
     font-weight: 600;
 }
 @media (max-width: 500px) {
