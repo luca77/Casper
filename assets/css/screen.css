@@ -1010,7 +1010,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     font-size: 2.0rem;
     line-height: 1.6em;
     background: white;
-    width: 800px;
+    width: 50em;
 }
 
 @media (max-width: 1170px) {
