@@ -1921,7 +1921,6 @@ Usage (In Ghost editor):
 }
 
 .read-next .post-card-title {
-    color: #fff;
     opacity: 0.8;
     transition: all 0.2s ease-in-out;
 }
@@ -1931,7 +1930,6 @@ Usage (In Ghost editor):
 }
 
 .read-next .post-card-excerpt {
-    color: rgba(255, 255, 255, 0.6);
 }
 
 .read-next .static-avatar {
@@ -1943,7 +1941,6 @@ Usage (In Ghost editor):
 }
 
 .read-next .post-card-byline-content a {
-    color: rgba(255, 255, 255, 0.8);
 }
 
 .read-next-card {
