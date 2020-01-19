@@ -638,7 +638,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .post-card-content-link {
     position: relative;
     display: block;
-    color: var(--darkgrey);
 }
 
 .post-card-content-link:hover {
@@ -672,6 +671,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .post-card-title {
+    color: var(--darkgrey);
     margin: 0 0 0.4em;
     line-height: 1.15em;
     transition: color 0.2s ease-in-out;
@@ -694,6 +694,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .post-card-excerpt p {
+    color: var(--midgrey);
     margin-bottom: 1em;
 }
 
