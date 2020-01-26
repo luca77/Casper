@@ -964,10 +964,11 @@ make sure this only happens on large viewports / desktop-ish devices.
     text-transform: uppercase;
 }
 
-.post-full-meta-date {
+.post-full-meta-date, .post-full-reading-time {
     color: var(--midgrey);
     font-size: 1.2rem;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 @media (max-width: 1170px) {
