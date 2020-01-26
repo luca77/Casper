@@ -19,6 +19,7 @@ into the {body} of the default.hbs template --}}
 
                     <time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY-MM-DD"}}</time>
 		    <span class="date-divider">/</span> <span class="post-tags">{{tags separator="&nbsp;&bull;&nbsp;"}}</span>
+                    <span class="date-divider">/</span> <span class="post-full-reading-time">{{reading_time}}</span>
 
                 <h1 class="post-full-title">{{title}}</h1>
 
@@ -69,10 +70,6 @@ into the {body} of the default.hbs template --}}
 
                         <section class="post-full-byline-meta">
                             <h4 class="author-name">{{authors}}</h4>
-                            <div class="byline-meta-content">
-                                <time class="byline-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time>
-                                <span class="byline-reading-time"><span class="bull">&bull;</span> {{reading_time}}</span>
-                            </div>
                         </section>
 
                     </section>

@@ -638,7 +638,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .post-card-content-link {
     position: relative;
     display: block;
-    color: var(--darkgrey);
 }
 
 .post-card-content-link:hover {
@@ -672,6 +671,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .post-card-title {
+    color: var(--darkgrey);
     margin: 0 0 0.4em;
     line-height: 1.15em;
     transition: color 0.2s ease-in-out;
@@ -694,6 +694,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .post-card-excerpt p {
+    color: var(--midgrey);
     margin-bottom: 1em;
 }
 
@@ -809,6 +810,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .post-card-byline-date {
+    color: color(var(--darkgrey) l(+20%));
     font-size: 1.2rem;
 }
 
@@ -962,10 +964,11 @@ make sure this only happens on large viewports / desktop-ish devices.
     text-transform: uppercase;
 }
 
-.post-full-meta-date {
+.post-full-meta-date, .post-full-reading-time {
     color: var(--midgrey);
     font-size: 1.2rem;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 @media (max-width: 1170px) {
@@ -990,7 +993,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 .post-full-title {
     margin: 0 0 0.2em;
     color: color(var(--darkgrey) l(-5%));
-    text-align-last: right;
+    text-align: center;
 }
 
 .post-full-custom-excerpt {
@@ -1920,7 +1923,6 @@ Usage (In Ghost editor):
 }
 
 .read-next .post-card-title {
-    color: #fff;
     opacity: 0.8;
     transition: all 0.2s ease-in-out;
 }
@@ -1930,7 +1932,6 @@ Usage (In Ghost editor):
 }
 
 .read-next .post-card-excerpt {
-    color: rgba(255, 255, 255, 0.6);
 }
 
 .read-next .static-avatar {
@@ -1942,7 +1943,6 @@ Usage (In Ghost editor):
 }
 
 .read-next .post-card-byline-content a {
-    color: rgba(255, 255, 255, 0.8);
 }
 
 .read-next-card {
@@ -2227,7 +2227,6 @@ Usage (In Ghost editor):
 
 .kg-bookmark-card {
     width: 100%;
-    background: var(--white);
 }
 
 .kg-card + .kg-bookmark-card {
