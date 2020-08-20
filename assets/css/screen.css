@@ -710,7 +710,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .post-card-meta {
-    background-color: var(--whitegrey);
     display: flex;
     align-items: flex-start;
     padding: 0;
@@ -790,7 +789,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .reading-time {
     flex-shrink: 0;
     margin-left: 20px;
-    color: var(--darkgrey);
     font-size: 1.2rem;
     line-height: 33px;
     font-weight: 500;
@@ -802,9 +800,9 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     flex: 1 1 50%;
     display: flex;
     flex-direction: column;
-    margin: 2px 0 0 6px;
-    color: color-mod(var(--midgrey) l(+10%));
-    font-size: 1.2rem;
+    margin: 2px 0 0;
+    color: color-mod(var(--darkgrey) l(+10%));
+    font-size: 1.3rem;
     line-height: 1.4em;
     font-weight: 400;
     letter-spacing: 0.2px;
