@@ -1026,13 +1026,14 @@ make sure this only happens on large viewports / desktop-ish devices.
     align-items: center;
     overflow: hidden;
     margin: 25px 0 50px;
-    max-height: 400px;
     background: color-mod(var(--lightgrey) l(+10%));
     border-radius: 3px;
 }
 
 .post-full-image img {
+    max-height: 400px;
     max-width: 1040px;
+    object-fit: cover;
     width: 100%;
     height: auto;
 }
