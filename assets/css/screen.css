@@ -698,6 +698,10 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     flex-direction: column;
 }
 
+.post-card-excerpt {
+    color: var(--midgrey);
+}
+
 .post-card-excerpt p:after {
     content: "...";
     max-width: 56em;
@@ -705,7 +709,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .post-card-excerpt p {
-    color: var(--midgrey);
     margin-bottom: 1em;
 }
 
@@ -2941,6 +2944,7 @@ Usage (In Ghost editor):
 
     .post-card,
     .post-card:hover {
+	background: var(--darkmode);
         border-bottom-color: color-mod(var(--darkmode) l(+8%));
     }
 
@@ -2956,6 +2960,11 @@ Usage (In Ghost editor):
         color: #fff;
     }
 
+    .post-card-byline-content,
+    .post-card-byline-date {
+        color: var(--grey);
+    }
+
     .post-card-image {
         background: var(--darkmode);
     }
@@ -2965,7 +2974,7 @@ Usage (In Ghost editor):
     }
 
     .post-card-excerpt {
-        color: color-mod(var(--midgrey) l(+10%));
+        color: var(--lightgrey);
     }
 
     .author-avatar,
@@ -2988,7 +2997,7 @@ Usage (In Ghost editor):
     }
 
     .post-full-custom-excerpt {
-        color: color-mod(var(--midgrey) l(+10%));
+        color: var(--grey);
     }
 
     .post-full-image {
